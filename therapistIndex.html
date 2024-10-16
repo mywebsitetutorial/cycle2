@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Harish Kumar">
+    <title>Therapist Dashboard</title>
+    <link rel="stylesheet" href="Styles/therapistindex.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dashboard</h1>
+        </header>
+
+        <div class="dashboard-content">
+            <h2>Welcome to your dashboard! Select an option below:</h2>
+
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Profile')">Patient Profile</button>
+                <button class="tablinks" onclick="openTab(event, 'Recommendations')">Recommendations</button>
+                <button class="tablinks" onclick="openTab(event, 'Insights')">Viewing Insights</button>
+                <button class="tablinks" onclick="openTab(event, 'Appointment')">Book Appointment</button>
+                <button onclick="location.href='therapistlogin.html'">Logout</button>
+            </div>
+
+            <div id="Profile" class="tabcontent">
+                <div class="profile-container">
+                    <img src="Image/pexels-lebele-19384241.jpg" alt="Profile Picture">
+                    <h2>Hi Melly</h2>
+                    <div class="links">
+                        <a href="patientprofile.html">Go to Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sonia Sinha and Thirumalai Balasubramani -->
+            <div id="Recommendations" class="tabcontent">
+                <h3>Write Recommendations for Sleep, Eat, and Exercise Activities</h3>
+                <form action="submit_recommendations.php" method="post">
+                    
+                    <label for="patientName">Patient Name:</label>
+                    <input type="text" id="patientName" name="patientName" required>
+
+                    <label for="sleepRecommendation">Sleep Recommendation:</label>
+                    <textarea id="sleepRecommendation" name="sleepRecommendation" rows="3" required></textarea>
+
+                    <label for="eatingRecommendation">Eating Recommendation:</label>
+                    <textarea id="eatingRecommendation" name="eatingRecommendation" rows="3" required></textarea>
+
+                    <label for="exerciseRecommendation">Exercise Recommendation:</label>
+                    <textarea id="exerciseRecommendation" name="exerciseRecommendation" rows="3" required></textarea>
+
+                    <button type="submit" class="submit-btn">Submit Recommendation</button>
+                </form>
+            </div>
+
+            <div id="Insights" class="tabcontent">
+                <h3>Viewing Insights</h3>
+                <div class="navigation">
+                    <a href="viewinginsights.html" class="nav-button">View Insights</a>
+                </div>
+            </div>
+
+            <div id="Appointment" class="tabcontent">
+                <h3>Book Appointment</h3>
+                <a href="bookappointment.html" class="nav-button">Book Appointment</a>
+        </div>
+       
+    </div>
+
+    <script src="Scripts/therapistindex.js"></script>
+</body>
+</html>

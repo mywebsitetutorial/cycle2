@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 32px;
+}
+
+/* Edit Profile container */
+.edit-profile-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.input-field {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .edit-profile-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

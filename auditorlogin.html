@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Harish Kumar & Thirumalai Balasubramani">
+    <title>Auditor Login</title>
+    <link rel="stylesheet" href="Styles/patientlogin.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Auditor Login</h2>
+        <form id="signInForm"> <div class="input-field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-field">
+                <button type="submit" id="login-btn" href="auditorindex.html">Login</button>
+            </div>
+            <div class="links">
+                <a href="forgotpassword.html">Forgot Password?</a>
+                <a href="register.html">New Registration</a>
+            </div>
+        </form>
+        
+        <div id="login-message"></div>
+    </div>
+    
+    <script src="Scripts/auditorlogin.js"></script> 
+</body>
+</html>

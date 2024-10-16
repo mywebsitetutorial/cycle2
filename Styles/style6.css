@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #eb7777;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+}
+
+.main-nav a:hover {
+    background-color: #eb9284;
+}
+
+.dropdown {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eb7777;
+    display: none;
+}
+
+.dropdown li {
+    width: 200px;
+}
+
+.dropdown a {
+    padding: 10px 20px;
+}
+
+.main-nav li:hover .dropdown {
+    display: block;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.appointment-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.appointment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.appointment-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.appointment-form input,
+.appointment-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.appointment-form button {
+    width: 100%;
+    padding: 10px;
+    background-color:#f35858;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.appointment-form button:hover {
+    background-color: #eb9284;
+}
+
+#thankYouMessage {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #eb7777;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Thirumalai Balasubramani */

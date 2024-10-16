@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Harish kumar">
+    <title>Sleep Check-In</title>
+    <link rel="stylesheet" href="Styles/sleepschedule.css"> 
+</head>
+<body>
+    <div class="checkin-container">
+        <header>
+            <h2>Sleep Check-In</h2>
+        </header>
+        <form id="sleep-form">
+            <label for="bedtime">What time did you go to bed?</label>
+            <input type="time" id="bedtime" name="bedtime" required><br><br>
+
+            <label for="waketime">What time did you wake up?</label>
+            <input type="time" id="waketime" name="waketime" required><br><br>
+
+            <label for="total-hours">Total Hours of Sleep:</label>
+            <input type="text" id="total-hours" name="total-hours" readonly><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="navigation">
+            <a href="eatingschedule.html" class="nav-button">Go to Eating Check-In</a>
+            <a href="exerciseschedule.html" class="nav-button">Go to Exercise Check-In</a>
+            <a href="patientindex.html" class="nav-button">Back to Dashboard</a>
+        </div>
+    </div>
+
+   
+    <script src="Scripts/sleepschedule.js"></script> 
+</body>
+</html>

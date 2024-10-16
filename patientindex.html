@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Harish kumar">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="Styles/patientindex.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dashboard</h1>
+        </header>
+
+        <div class="dashboard-content">
+            <h2>Welcome to your dashboard! Select an option below:</h2>
+
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Profile')">Patient Profile</button>
+                <button class="tablinks" onclick="openTab(event, 'Checkin')">Daily Health Check-In</button>
+                <button class="tablinks" onclick="openTab(event, 'Insights')">Viewing Insights</button>
+                <button class="tablinks" onclick="openTab(event, 'Appointment')">Book Appointment</button>
+                <button onclick="location.href='patientlogin.html'">Logout</button>
+            </div>
+
+            <div id="Profile" class="tabcontent">
+                <div class="profile-container">
+                    <img src="Image/pexels-lebele-19384241.jpg" alt="Profile Picture">
+                    <h2>Hi Melly</h2>
+                    <div class="links">
+                        <a href="patientprofile.html">Go to Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div id="Checkin" class="tabcontent">
+                <h3>Daily Health Check-In</h3>
+                <p>Select the section you want to check in:</p>
+                <a href="sleepschedule.html" class="nav-button">Sleep Schedule</a>
+                <a href="eatingschedule.html" class="nav-button">Eating Schedule</a>
+                <a href="exerciseschedule.html" class="nav-button">Exercise Schedule</a>
+            </div>
+
+            <div id="Insights" class="tabcontent">
+                <h3>Viewing Insights</h3>
+                <div class="navigation">
+                    <a href="viewinginsights.html" class="nav-button">View Insights</a>
+                </div>
+            </div>
+
+            <div id="Appointment" class="tabcontent">
+                <h3>Book Appointment</h3>
+                <a href="bookappointment.html" class="nav-button">Book Appointment</a>
+        </div>
+       
+    </div>
+
+    <script src="Scripts/patientindex.js"></script>
+</body>
+</html>
+<!--tablinks reference : W3Schools.com. (n.d.). https://www.w3schools.com/howto/howto_js_tabs.asp -->

@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #eb7777;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 2em;
+    margin: 0;
+}
+
+.main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+}
+
+.main-nav a:hover {
+    background-color: #eb9284;
+}
+
+.dropdown {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:#eb7777;
+    display: none;
+}
+
+.dropdown li {
+    width: 200px;
+}
+
+.dropdown a {
+    padding: 10px 20px;
+}
+
+.main-nav li:hover .dropdown {
+    display: block;
+}
+
+
+main {
+    padding: 20px;
+}
+
+/* FAQs Section Styles */
+.faqs {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faqs h2 {
+    color: #333;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.faq h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #eb7777;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Thirumalai Balasubramani */

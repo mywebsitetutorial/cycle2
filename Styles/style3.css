@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #eb7777;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+}
+
+.main-nav a:hover {
+    background-color: #eb9284;
+}
+
+.dropdown {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eb7777;
+    display: none;
+}
+
+.dropdown li {
+    width: 200px;
+}
+
+.dropdown a {
+    padding: 10px 20px;
+}
+
+.main-nav li:hover .dropdown {
+    display: block;
+}
+
+
+/* Testimonials Section Styles */
+.testimonials {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonials h2 {
+    color: #333;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    position: relative;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonial p {
+    line-height: 1.6;
+    margin-top: 120px; /* Adjust for image height */
+}
+
+.testimonial h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+}
+
+.locations {
+    text-align: center;
+}
+
+.locations h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.location-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.location {
+    text-align: center;
+    width: 45%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.location h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.location p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+.location:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color:#eb7777;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+/* Thirumalai Balasubramani */

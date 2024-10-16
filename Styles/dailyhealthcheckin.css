@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.checkin-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+header h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+.tab {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.tab button:hover {
+    background-color: #ddd;
+}
+.tab button.active {
+    background-color: #007bff;
+    color: white;
+}
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+.tabcontent.active {
+    display: block;
+}
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #0056b3;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+table th {
+    background-color: #007bff;
+    color: white;
+}
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+form h4 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #333;
+}
+@media (max-width: 768px) {
+    .checkin-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .tab button {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}
+/*Harish Kumar*/
+/*##START COMMENT BLOCK##
+Original code:
+-html page and css with some error  with tablinks
+AI Tool used: 
+-chatGPT.
+Prompt Supplied:
+-Clear error and correct the CSS code to style in website manner.
+Response Provided:
+- ChatGPT provided detailed CSS code to style the HTML structure. 
+Your own interpretation of the response:
+- the corrected code helped me to create good styling
+##END COMMENT BLOCK##
+
+
+
+
+
+
+
+
+
+
